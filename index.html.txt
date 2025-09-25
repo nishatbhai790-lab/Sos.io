@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nishat bhai — Official Links</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Noto Sans Bengali', sans-serif;
+      background: url('https://i.ibb.co/ZVh01dm/coxs-bazar.jpg') no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Wave Animation */
+    .wave {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 200%;
+      height: 150px;
+      background: rgba(255,255,255,0.5);
+      border-radius: 1000% 1000% 0 0;
+      animation: wave 8s linear infinite;
+      opacity: 0.5;
+    }
+
+    .wave:nth-child(2) {
+      bottom: 10px;
+      animation-duration: 10s;
+      opacity: 0.3;
+    }
+
+    .wave:nth-child(3) {
+      bottom: 20px;
+      animation-duration: 12s;
+      opacity: 0.2;
+    }
+
+    @keyframes wave {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.65);
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      color: #fff;
+      z-index: 2;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 30px;
+      color: #00ffcc;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 15px;
+      color: #ddd;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      background: linear-gradient(135deg, #006a4e, #f42a41); /* BD Flag colors */
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.07);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    }
+
+    .btn img {
+      width: 22px;
+      height: 22px;
+      filter: invert(1);
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Nishat bhai</h1>
+    <p>বাংলাদেশি কালচার × কক্সবাজার থিম 🌊</p>
+
+    <div class="links">
+      <a class="btn" href="https://www.facebook.com/share/1a22zhG2WV/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"> Facebook
+      </a>
+      <a class="btn" href="https://www.instagram.com/md_nishat_raj_?igsh=MWZvd2ozZnRwa2pubg==" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"> Instagram
+      </a>
+      <a class="btn" href="https://wa.me/8801611935017" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg"> WhatsApp
+      </a>
+      <a class="btn" href="https://www.tiktok.com/@crazyboys2969?_t=ZS-900y1lR5ay8&_r=1" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"> TikTok
+      </a>
+      <a class="btn" href="https://www.youtube.com/@crazyboys3807" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"> YouTube
+      </a>
+      <a class="btn" href="mailto:mdprincek467@gmail.com" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg"> Email
+      </a>
+    </div>
+
+    <footer>© <span id="year"></span> Nishat bhai — Official Owner</footer>
+  </div>
+
+  <!-- Waves -->
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
